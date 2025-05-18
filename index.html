@@ -2,90 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Karwar Tourism</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #004d66;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .page {
-            display: none;
-            padding: 20px;
-            text-align: center;
-        }
-        .active {
-            display: block;
-        }
-        img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 8px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaravaliVibes</title>
+    <link rel="stylesheet" href="ss.css">
 </head>
 <body>
-
-<header>
-    <h1>Welcome to Karwar</h1>
-</header>
-
-<nav>
-    <button onclick="showPage('home')">Home</button>
-    <button onclick="showPage('temple')">Temples</button>
-    <button onclick="showPage('contact')">Contact</button>
-</nav>
-
-<div id="home" class="page active">
-    <h2>Explore Karwar</h2>
+    <header>
+        <h1 class="logo">
+            <span class="karavali">Karavali</span><span class="vibes">Vibes</span>
+        </h1>
+        <nav class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Places to Visit</a>
+            <a href="#">Culture</a>
+            <a href="PlanYourTrip.html">Plan Your Trip</a>            
+            <a href="#">Contact</a>
+            <a href="#">   </a>
+        </nav>
+    </header>
     
-    <p>Karwar, a coastal city in Karnataka, is known for its beautiful beaches, serene landscapes, and tranquil Arabian Sea views. It’s a perfect getaway for nature and beach lovers.</p>
-</div>
-</div>
+    <main>
+        <section class="hero">
+            <h2 class="explore-karwar">
+                <span class="explore">Explore</span> <span class="karwar">Karwar</span>
+            </h2>
+            <p class="center-text">
+                Discover the hidden coastal paradise of Karnataka. <br>
+                Pristine beaches, lush forests, and rich cultural heritage await.
+            </p>
+             
+            <button class="big-button" onclick="toggleColor()">Plan Your Visit</button>
+        </section>
+    </main>
 
-<div id="temple" class="page">
-    <h2>Temples in Karwar</h2>
-    
-    <p>
- <p> Here's a more detailed look at some of these temples:.</p>
- <p> Shri Samsthan Shri Kshetra Baad Math (Gurumath, Karwar): A famous mutt and temple complex.</p>
- <p> Shree Mahadeva Temple: A notable temple in Karwar.</p>
- <p> Shri Shejjeshwara Temple: Another important temple in Karwar.</p>
- <p>  Maruti Temple: Dedicated to Lord Hanuman, located on the Karwar main road.</p>
- <p> Venkataramana Temple: Located near the Karwar beach, known for its ochre paintings.</p>
- <p>  Narasimha Temple: Located on top of a hill at Kurumgad, dedicated to Lord Narasimha.</p>
-.</p>
-</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>VisitKarwar</h2>
+            <p>Your guide to exploring Karnataka's coastal paradise with pristine beaches, lush forests, and rich cultural heritage.</p>
+        </div>
 
-<div id="contact" class="page">
-    <h2>Contact & Info</h2>
-   <P> mail id : mykarwarplace@gmail.com
-</div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Places to Visit</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Plan Your Trip</a></li>
+            </ul>
+        </div>
 
-<script>
-    function showPage(pageId) {
-        const pages = document.querySelectorAll('.page');
-        pages.forEach(page => page.classList.remove('active'));
-        document.getElementById(pageId).classList.add('active');
-    }
-</script>
+        <div class="footer-section">
+            <h3>Discover</h3>
+            <ul>
+                <li><a href="#">Beaches</a></li>
+                <li><a href="#">Islands</a></li>
+                <li><a href="#">Local Cuisine</a></li>
+                <li><a href="#">Festivals</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Where to Stay</a></li>
+            </ul>
+        </div>
 
+        <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:mykarwarplace@gmail.com">mykarwarplace@gmail.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <hr class="footer-line">
+        <p>© 2025 KaravaliVibes. All rights reserved. Designed and Developed by Rahul Patil.</p>
+    </div>
+</footer>
 </body>
 </html>

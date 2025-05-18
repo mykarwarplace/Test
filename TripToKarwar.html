@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip to Karwar</title>
+    <link rel="stylesheet" href="ttk.css">
+</head>
+<body>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Trip Planning Section -->
+    <section class="trip-form">
+        <h2>Planning a Trip to Karwar?</h2>
+        <p>Fill out the details below and get a customized travel plan.</p>
+
+        <form id="tripForm">
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" value="Karwar" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="start-date">Trip Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">Trip Duration:</label>
+                <select id="duration" name="duration">
+                    <option value="1">1 day</option>
+                    <option value="2">2 days</option>
+                    <option value="3">3 days</option>
+                    <option value="4">4 days</option>
+                    <option value="5">5 days</option>
+                    <option value="6">6 days</option>
+                    <option value="7">7 days</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes / Special Requirements:</label>
+                <textarea id="notes" name="notes" placeholder="Any specific requests?"></textarea>
+            </div>
+            
+            <button type="submit">Request Quote</button>
+            <button type="submit" onclick="redirectHome()">Close</button>
+
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+     
+
+</html>
+ 

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('karwar_scenic.jpg') no-repeat center/cover;
+}
+ 
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+ 
+.hero {
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sticky-nav {
+    position: fixed;
+    width: 100%;
+    background: #333;
+    padding: 10px;
+}
+
+.sticky-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticky-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.transport-options {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.highlight {
+    background: #ffeb3b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.trip-form {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.visit-button {
+    background-color: white; /* Default white */
+    color: black; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: 2px solid #FFD700; /* Adds yellow border */
+    border-radius: 30px; /* Smooth rounded edges */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.visit-button:hover {
+    background-color: #FFD700; /* Changes to yellow on hover */
+    color: black; /* Keeps text readable */
+}
+
+ 
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #222;
+    color: white;
+}
+
+footer p {
+    color: white; /* Ensures the text is white */
+}
